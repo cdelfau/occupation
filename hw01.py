@@ -23,16 +23,36 @@ def parse(filename, mode):
     #>:(
     print dictionary
 
-def getRandOcc():
-    rand = random.randrange(10)
+def multTen(dictionary):
+    for index in dictionary:
+        dictionary[index] *= 10
+    return dictionary
 
-    for key in dictionary:
-        if rand < dictionary[rand]:
-            return key
-        else:
-            rand -= 1
+def makeList(dictionary):
+    L = []
+    for occ in dictionary.len():
+        for val in dictionary[occ]:
+            L.append(occ)
+    return dictionary
 
-parse("occupations.csv","r")
-getRandOcc()
+def randomOcc(list):
+    print(random.choice(list))
+    return;
+
+#def getRandOcc():
+#    rand = random.randrange(10)
+#
+#    for key in dictionary:
+#        if rand < dictionary[rand]:
+#            return key
+#        else:
+#            rand -= 1
+
+dict = parse("occupations.csv","r")
+list = multTen(dict)
+mlist = makeList(list)
+randomOcc(mlist)
+
+#getRandOcc()
 
 
